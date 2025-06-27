@@ -42,6 +42,7 @@ header {
   align-items: center;
   width: 40%;
   color: #fff;
+   gap: 1.5rem;
 }
 .bar-h a {
   text-decoration: none;
