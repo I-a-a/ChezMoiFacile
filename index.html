@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChezMoiFacile</title>
+  <link rel="stylesheet" href="acceuil.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="bar-h">
+      <a href="#classements">Classements</a>
+      <a href="#catalogue">Catalogue</a>
+      <h1 class="logo">ChezMoiFacile</h1>
+      <a href="#details">Details</a>
+      <a href="#apropos">À Propos</a>
+    </div>
+    <div class="logoimg">
+      <img src="img/logo.webp" alt="logo du site">
+    </div>
+  </header>
+
+  <section class="etoiles-container" id="classements">
+    <div class="Classements">
+      <p class="grand-titre">Notre sélection selon les évaluations</p>
+      <div class="select-star">
+        <div class="star"><i class="fa-regular fa-star"></i></div>
+
+        <div class="left-arrow" onclick="plusSlides(-1)">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <div class="mySlides">
+          <img src="app1.webp" alt="appartement" />
+        </div>
+        <div class="mySlides">
+          <img src="app2.webp" alt="appartement" />
+        </div>
+        <div class="mySlides">
+          <img src="app3.webp" alt="appartement" />
+        </div>
+        <div class="mySlides">
+          <img src="app4.webp" alt="appartement" />
+        </div>
+        <div class="mySlides">
+          <img src="app5.webp" alt="appartement" />
+        </div>
+
+        <div class="etoile-counter">
+          <span class="etoile-nombre">1 étoile</span>
+          <span class="i-p">2Mil DA / Mois</span>
+          <span class="i-f">F3</span>
+        </div>
+
+        <div class="right-arrow" onclick="plusSlides(1)">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="expo-container" id="catalogue">
+    <div class="img-part">
+
+      <!-- Expo Appartement 1 à 5 -->
+      <div class="expo" data-appart="1">
+        <a href="#"><img src="img/app1-sdb.webp" alt="sdb" /></a>
+        <a href="#"><img src="img/app1-cuisine.webp" alt="cuisine" /></a>
+        <a href="#"><img src="img/app1-chambre.webp" alt="chambre" /></a>
+        <a href="#"><img src="img/app1-salon.webp" alt="salon" /></a>
+      </div>
+      <div class="expo" data-appart="2">
+        <a href="#"><img src="img/app2-sdb.webp" alt="sdb" /></a>
+        <a href="#"><img src="img/app2-cuisine.webp" alt="cuisine" /></a>
+        <a href="#"><img src="img/app2-chambre.webp" alt="chambre" /></a>
+        <a href="#"><img src="img/app2-salon.webp" alt="salon" /></a>
+      </div>
+      <div class="expo" data-appart="3">
+        <a href="#"><img src="img/app3-sdb.webp" alt="sdb" /></a>
+        <a href="#"><img src="img/app3-cuisine.webp" alt="cuisine" /></a>
+        <a href="#"><img src="img/app3-chambre.webp" alt="chambre" /></a>
+        <a href="#"><img src="img/app3-salon.webp" alt="salon" /></a>
+      </div>
+      <div class="expo" data-appart="4">
+        <a href="#"><img src="img/app4-sdb.webp" alt="sdb" /></a>
+        <a href="#"><img src="img/app4-cuisine.webp" alt="cuisine" /></a>
+        <a href="#"><img src="img/app4-chambre.webp" alt="chambre" /></a>
+        <a href="#"><img src="img/app4-salon.webp" alt="salon" /></a>
+      </div>
+      <div class="expo" data-appart="5">
+        <a href="#"><img src="img/app5-sdb.webp" alt="sdb" /></a>
+        <a href="#"><img src="img/app5-cuisine.webp" alt="cuisine" /></a>
+        <a href="#"><img src="img/app5-chambre.webp" alt="chambre" /></a>
+        <a href="#"><img src="img/app5-salon.webp" alt="salon" /></a>
+      </div>
+<div class="affichage-p">
+  <div class="p-expo">
+    <img src="img/app1-sdb.webp" alt="aperçu" class="p-preview" />
+  </div>
+  <div class="cata">
+    <h3 class="cata-titre">Details de la salle de bain</h3>
+    <div class="cata-dyn">
+      <p>Nombre de salles de bain : <span class="infos-sb-nmb">2</span></p>
+      <p>Douche : <span class="infos-sb-type">Italienne</span></p>
+      <p>WC : <span class="infos">intégré</span></p>
+    </div>
+    <p>Surface : <span class="infos-surface">9 m²</span></p>
+  </div>
+</div>
+
+      <div class="photo-maison">
+        <img src="img/app1.webp" alt="Appartement" />
+        <h2>Louez maintenant !</h2>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="fiche-container" id="details">
+    <div class="fiche-expo">
+      <div class="fiche-appart" data-appart="1">
+        <img src="img/app1-sdb.webp" class="fiche-img top" />
+        <img src="img/app1-cuisine.webp" class="fiche-img angle1" />
+        <img src="img/app1-chambre.webp" class="fiche-img angle2" />
+        <img src="img/app1-salon.webp" class="fiche-img angle3" />
+      </div>
+      <div class="fiche-appart" data-appart="2">
+        <img src="img/app2-sdb.webp" class="fiche-img top" />
+        <img src="img/app2-cuisine.webp" class="fiche-img angle1" />
+        <img src="img/app2-chambre.webp" class="fiche-img angle2" />
+        <img src="img/app2-salon.webp" class="fiche-img angle3" />
+      </div>
+      <div class="fiche-appart" data-appart="3">
+        <img src="img/app3-sdb.webp" class="fiche-img top" />
+        <img src="img/app3-cuisine.webp" class="fiche-img angle1" />
+        <img src="img/app3-chambre.webp" class="fiche-img angle2" />
+        <img src="img/app3-salon.webp" class="fiche-img angle3" />
+      </div>
+      <div class="fiche-appart" data-appart="4">
+        <img src="img/app4-sdb.webp" class="fiche-img top" />
+        <img src="img/app4-cuisine.webp" class="fiche-img angle1" />
+        <img src="img/app4-chambre.webp" class="fiche-img angle2" />
+        <img src="img/app4-salon.webp" class="fiche-img angle3" />
+      </div>
+      <div class="fiche-appart" data-appart="5">
+        <img src="img/app5-sdb.webp" class="fiche-img top" />
+        <img src="img/app5-cuisine.webp" class="fiche-img angle1" />
+        <img src="img/app5-chambre.webp" class="fiche-img angle2" />
+        <img src="img/app5-salon.webp" class="fiche-img angle3" />
+      </div>
+    </div>
+
+    <div class="fiche-details">
+      <p>Localisation : Algérie</p>
+      <p>Prix : 2Mil Da / Mois</p>
+      <p>Établissements : École, Hôpital à proximité</p>
+      <p>Moyens de transport : Bus, Tram</p>
+      <div class="fiche-preview">
+        <img src="img/a2.webp" class="fiche-preview-img" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="apropos">
+    <div class="footer-content">
+      <p class="footer-text">Site fait par I.A.A pour le projet du groupe INFO 15</p>
+      <a href="https://github.com/" target="_blank" class="footer-github"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <div class="a-savoir">
+      <p><span class="txt-important">ChezMoiFacile</span> est un mini site web interactif réalisé pour un examen d’informatique 15. Il permet aux utilisateurs de <span class="txt-important">consulter et louer</span>  des logements classés par nombre d’étoiles (<span class="txt-important">Selon vos préférences et votre budget</span>), avec une galerie d’images, des détails dynamiques pour chaque pièce (salle de bain, cuisine, chambre, salon), ainsi que des informations sur la surface, le prix et les services à proximité. Le site utilise HTML, CSS et JavaScript pour offrir une navigation fluide et intuitive.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+  <script src="acceeuil.js"></script>
+
+</body>
+</html>
